@@ -334,6 +334,59 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+
+  .badge-ios {
+    width: 295px;
+    margin: 25px;
+  }
+
+  .badge-android {
+    width: 350px;
+  }
+
+  .container-information-dolowand-img-text {
+    width: 95%;
+    margin: 0% 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-text-and-img p {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .container-img-dolowands {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-text-and-img p {
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .dowloand-container {
+    width: 100%;
+    height: 1050px;
+    background: #42a398;
+  }
+
+  .container-information-cover {
+    width: 40%;
+    padding-right: 5%;
+  }
 }
 
 @media screen and (max-width: 760px) {
