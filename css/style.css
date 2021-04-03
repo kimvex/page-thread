@@ -5,6 +5,15 @@ body {
   padding: 0;
 }
 
+.badge-ios {
+  width: 295px;
+  margin: 25px;
+}
+
+.badge-android {
+  width: 350px;
+}
+
 .menu {
   width: 100%;
   padding-top: 0.6rem;
@@ -267,7 +276,7 @@ body {
 }
 
 @media screen and (max-width: 940px) {
-  /* .container-information-cover {
+  .container-information-cover {
     width: 40%;
     padding-right: 15%;
   }
@@ -289,7 +298,7 @@ body {
 
   body {
       min-width: fit-content;
-  } */
+  }
 }
 
 @media screen and (max-width: 879px) {
