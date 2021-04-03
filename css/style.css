@@ -1,5 +1,6 @@
 html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -51,10 +52,14 @@ body {
 
 .container-cover {
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-image: url('../img/cover.png') ;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.information-cover-hidden {
+  display: none;
 }
 
 .information-cover {
@@ -262,7 +267,7 @@ body {
 }
 
 @media screen and (max-width: 940px) {
-  .container-information-cover {
+  /* .container-information-cover {
     width: 40%;
     padding-right: 15%;
   }
@@ -284,7 +289,7 @@ body {
 
   body {
       min-width: fit-content;
-  }
+  } */
 }
 
 @media screen and (max-width: 879px) {
@@ -319,10 +324,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  }
-
-  body {
-    min-width: fit-content;
   }
 }
 
@@ -364,10 +365,6 @@ body {
     font-weight: 300;
     line-height: 1.6;
   }
-
-  body {
-      min-width: fit-content;
-  }
 }
 
 @media screen and (max-width: 760px) {
@@ -394,17 +391,38 @@ body {
 
   .title-information-cover {
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
 
   .description-cover {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.6;
+  }
+
+  .container-information-characteristics {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container-information-characteristics-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   .container-information-characteristics-text p {
@@ -412,10 +430,116 @@ body {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    text-shadow: 1px 1px 2px black;
   }
 
-  /* body {
-    min-width: fit-content;
-  } */
+  .white-text {
+    border: 1px solid;
+    padding: 1rem;
+    color: black !important;
+    box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    margin-right: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    display: none;
+  }
+
+  .container-information-cover {
+    width: 100%;
+  }
+
+  .information-cover {
+    display: none;
+  }
+
+  .information-cover-hidden {
+    width: 95%;
+    padding: 0% 2.5%;
+    background: #42a498;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .container-information-dolowand-img-text {
+    width: 95%;
+    margin: 0% 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-text-and-img p {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .container-img-dolowands {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .badge-ios {
+    width: 295px;
+    margin: 25px;
+  }
+
+  .badge-android {
+    width: 350px;
+  }
+
+  .dowloand-container {
+    width: 100%;
+    height: 1050px;
+    background: #42a398;
+  }
+
+  .container-contactar {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .information-cpu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .information-r {
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 90%;
+    text-align: center;
+  }
+
+  .title-thread {
+    padding-left: 0.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+  }
 }
