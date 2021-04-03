@@ -6,7 +6,7 @@ body {
 }
 
 .badge-ios {
-  width: 580px;
+  width: 200px;
   margin: 25px;
 }
 
@@ -147,6 +147,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
 .container-alings-left {
@@ -209,7 +210,7 @@ body {
 }
 
 .container-information-dolowand-img-text {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -227,7 +228,7 @@ body {
 .container-img-dolowands {
   width: 60%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .container-contactar {
@@ -386,6 +387,14 @@ body {
   .container-information-cover {
     width: 40%;
     padding-right: 5%;
+  }
+
+  .container-text-and-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -603,5 +612,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 35px;
+  }
+
+  .container-text-and-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
