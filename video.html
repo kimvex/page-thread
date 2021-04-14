@@ -19,14 +19,14 @@
   </style>
 </head>
 <body>
-<iframe frameborder="0" class="size" src=""></iframe>
+<iframe width="1080" height="720" frameborder="0" class="size" src=""></iframe>
 <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const video_url = urlParams.get('video')
   const id = video_url.split("/")
   url = id[id.length - 1].replace(/watch\?v=/g, '');
-  document.querySelector(".size").src = `https://www.youtube.com/embed/${url}?rel=1&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=0&vq=hd1080`
+  document.querySelector(".size").src = `https://www.youtube.com/embed/${url}?rel=1&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=0&vq=large`
 </script>
 </body>
 </html>
