@@ -26,7 +26,7 @@
   const video_url = urlParams.get('video')
   const id = video_url.split("/")
   url = id[id.length - 1].replace(/watch\?v=/g, '');
-  document.querySelector(".size").src = `https://www.youtube.com/embed/${url}?rel=1&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=0`
+  document.querySelector(".size").src = `https://www.youtube.com/embed/${url}?rel=1&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=0&vq=hd1080`
 </script>
 </body>
 </html>
