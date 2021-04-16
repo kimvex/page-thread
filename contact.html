@@ -14,21 +14,82 @@
       height: 100%;
       border: 0;
     }
+
+    .container-form {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-component {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
+    
+    .title {
+      height: 40px;
+      margin-bottom: 20px;
+      border: 1px solid #009387;
+    }
+
+    .text-area {
+      height: 400px;
+      margin-bottom: 10px;
+      border: 1px solid #009387;
+    }
+
+    .button-send {
+      height: 50px;
+      border: 1px solid #009387;
+      background: white;
+    }
   </style>
 </head>
 <body>
-  <div>
-    <form>
-      <input type="text" placeholder="Asunto">
-      <textarea type="text" placeholder="Descripción del problema">
-        <button>Enviar</button>
+  <div class="container-form">
+    <p>
+      ¿Tienes alguna duda, problema, comentario o sugerencia? No dudes en enviarnosla.
+    </p>
+    <form class="form-component">
+      <input type="text" placeholder="Asunto" class="title" id="title" required>
+      <textarea type="text" class="text-area" placeholder="Descripción del problema" id="description" required></textarea>
+      <button id="button-send" class="button-send">Enviar</button>
     </form>
   </div>
 <script>
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const video_url = urlParams.get('user_id')
-  const id = video_url.split("/")
+  document.querySelector("#button-send").addEventListener('click', (e) => {
+    e.preventDefault()
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const video_url = urlParams.get('user_id')
+    const id = video_url.split("/")
+    const title = document.querySelector("#title").value
+    const description = document.querySelector("#description").value
+  
+    const data = {
+      title,
+      description,
+      user_id: id[0]
+    }
+  
+    console.log(data)
+  
+    fetch('https://api.threadappify.com/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+  }, false)
 </script>
 </body>
 </html>
